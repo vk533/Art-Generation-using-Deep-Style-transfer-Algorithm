@@ -47,6 +47,9 @@ One important part of the gram matrix is that the diagonal elements such as  Gii
 
 By capturing the prevalence of different types of features ( Gii ), as well as how much different features occur together ( Gij ), the Style matrix  G  measures the style of an image.
 ### style cost
+
+![Image](ImagesART/Picture3.png)
+
 After generating the Style matrix (Gram matrix), your goal will be to minimize the distance between the Gram matrix of the "style" image S and that of the "generated" image G. For now, we are using only a single hidden layer  a[l] , and the corresponding style cost for this layer is defined as:
 
                                   Jstyle(S,G)=1/4×nC2×(nH×nW)^2{∑i=1 to n{∑j=1nC(G(S)ij−G(G)ij)^2}
